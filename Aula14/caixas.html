@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style> /*PARA MEXER NA PAGINA IR EM INSPECIONAR E EM DEVTOOLS*/
+        a { /*INLINE LEVEL*/
+            border: solid;
+            border width: 10px;
+            border-color: red;
+            display: block; /*Para tornar links em box level*/
+            
+        }
+        h1 { /*BOX LEVEL*/
+           /*  display: inline; /*Para transformar box levels em inline levels*/ 
+
+            border: solid;
+            border-width: 25px;
+            border-color: black;
+            /*para simplificar o uso de bordas = border: 10px(width) -> solid -> red(color)*/
+
+            width: 400px;
+            height: 200px;
+
+
+            padding-top: 10px; /*espaçamento para a borda em cima*/
+            padding-left: 10px; /*espaçamento para a borda na esquerda*/
+            padding-right: 10px;/*espaçamento para a borda na direita*/
+            padding-bottom: 10px;/*espaçamento para a borda em baixo*/
+            /*para simplificar o padding = padding: top(10px) -> right(10px) -> bottom(10px) -> left(10px)*/
+
+
+            background-color: aquamarine;
+
+            margin-top: 10px; /*Espaço para a margem da pagina acima*/
+            margin-bottom: 10px; /*Espaço para a margem da pagina abaixo*/
+            margin-left: 10px; /*Espaço para a margem da pagina a esquerda*/
+            margin-right: 10px; /*Espaço para a margem da pagina a direita*/
+            /*para simplificar a margin = margin: top(10px) -> right(10px) -> bottom(10px) -> left(10px)*/
+
+            margin: auto; /*Para centralizar o elemento*/
+
+
+            outline-width: 5px; /*UMA BORDA NA BORDA*/
+            outline-style: dashed; /*Tracejado*/
+            outline-color: coral;
+            /*Para simplificar o outline = outline: width -> style -> color*/
+        }
+    </style>
+</head>
+<body>
+    <h1>Texto em caixa</h1>
+    <p>Paragrafos são exemplos de box leve e <a href="#">Links de inline</a> como </p>
+    
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PSE</title>
+        
+    <style>
+        /*
+        # = ID
+        . = CLASSE
+        : = PSEUDO-CLASSE
+        :: = PSEUDO-ELEMENTO
+        > = FILHO
+        */
+        
+        a { /*cor de todos os links sera vermelho*/
+            color: red;
+        }
+        a:visited { /*cor de todos os links visitados*/
+            color: blue;
+        }
+        a:hover { /*Quando passar com o mouse em cima o texto será sublinhado*/
+            text-decoration: underline;
+        }
+        a:active { /*Enqaunto eu estiver clicando o texto ficara amarelo*/
+            color: yellow;
+        }
+        /*SITE DOS SIMBOLOS : ERIKASARTI*/
+        a::before { /*Comando para botar simbolos, antes do elemento desejado*/
+            content: '✖'; 
+            font-size: normal;
+            color: red;
+        }
+        a::after { /*Comando para botar o simbolo após o elemento desejado*/
+            content: '✔';
+            font-size: normal;
+            color: green;
+        }
+       
+    </style>
+</head>
+<body>
+    <ul>
+        <li>
+            <p><a href="https://youtube.com/">Link para o yt</a></p>
+        </li>
+        <li>
+            <p><a href="https://youtube.com/">Link para o yt</a></p>
+        </li>
+        <li>
+            <p><a href="https://youtube.com/">Link para o yt</a></p>
+        </li>
+    </ul>
+    
+</body>
+</html>
